@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="UnitTests">
+    <classes>
+      <class name="com.browserstack.tests.unit.UserRegistrationTest" />
+      <class name="com.browserstack.tests.unit.ShoppingCartTest" />
+      <class name="com.browserstack.tests.unit.EmailValidatorTest" />
+      <class name="com.browserstack.tests.unit.CreditCardValidatorTest" />
+    </classes>
+  </test>
+</suite>

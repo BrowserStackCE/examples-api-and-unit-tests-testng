@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="ApiTests">
+    <classes>
+      <class name="com.browserstack.tests.api.GetApi" />
+      <class name="com.browserstack.tests.api.PostApi" />
+      <class name="com.browserstack.tests.api.PutApi" />
+      <class name="com.browserstack.tests.api.DeleteApi" />
+    </classes>
+  </test>
+</suite>
