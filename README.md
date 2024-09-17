@@ -1,6 +1,6 @@
 ![Logo](https://avatars.githubusercontent.com/u/1119453?s=200&v=4)
 
-# BrowserStack Examples API and UNIT tests
+# API and Unit tests on Observability
 
 ## Introduction
 
