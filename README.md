@@ -167,4 +167,4 @@ In this section, we will run the enitre test suite on Browserstack. To change te
 
 ## Additional Resources
 
-- View your test results on the [BrowserStack Automate dashboard](https://observability.browserstack.com/)
+- View your test results on the [BrowserStack Observability dashboard](https://observability.browserstack.com/)
