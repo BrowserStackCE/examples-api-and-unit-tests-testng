@@ -35,22 +35,17 @@ This repository contains the following API and unit tests:
 | API        | PostRequestTest          | This test verifies the POST requests, ensuring data is successfully created and the response includes the correct status code and payload.              |
 | API        | PutRequestTest           | This test verifies the PUT requests for updating resources in the [Reqres API](https://reqres.in/), checking data integrity post-update.                |
 | API        | DeleteRequestTest        | This test verifies the DELETE requests, ensuring resources are deleted successfully and the correct response code is returned.                          |
-| Unit       | CreditCardValidatorTest  | This unit test checks the validity of credit card numbers using various test cases to ensure the validation logic is accurate.                           |
+| Unit       | CreditCardValidatorTest  | This unit test checks the whether the entered credit card number is correct or not.                                                                     |
 | Unit       | EmailValidatorTest       | This unit test checks the correctness of the email validation logic, ensuring only properly formatted email addresses are accepted.                     |
-| Unit       | ShoppingCartTest         | This test verifies that the shopping cart functionality works correctly, including adding and removing items and calculating the total cost.            |
-| Unit       | UserRegistrationTest     | This test validates the user registration process, ensuring proper handling of form inputs and successful user creation.                                |
+| Unit       | ShoppingCartTest         | This unit test verifies that the shopping cart functionality works correctly, verifying item addition and cart emptying functionality.                  |
+| Unit       | UserRegistrationTest     | This test validates the user registration process, which includes testing valid and invalid user registration scenarios.                                |
 
 
 ---
 
-## Test infrastructure environments
-- [BrowserStack](https://browserstack.com)
+# BrowserStack Test Observability
 
----
-
-# BrowserStack
-
-[BrowserStack](https://browserstack.com) provides instant access to 2,000+ real mobile devices and browsers on a highly reliable cloud infrastructure that effortlessly scales as testing needs grow.
+[BrowserStack Test Observability](https://www.browserstack.com/test-observability) is a tool that provides deep insights into test execution, performance, and debugging to help teams improve test reliability and speed.
 
 ## Prerequisites
 
@@ -75,18 +70,17 @@ This repository contains the following API and unit tests:
 
 Note:
 
-- We have configured a list of test capabilities in the [browserstack.yml](browserstack.yml) file. You can certainly update them based on your device / browser test requirements.
-- The exact test capability values can be easily identified using the [Browserstack Capability Generator](https://browserstack.com/automate/capabilities)
+- We have configured a list of test capabilities in the [browserstack.yml](browserstack.yml) file. You can certainly update them based on your test requirements.
 
 ## Running Your Tests
 
-### Run only api tests on BrowserStack
+### Run only API tests on BrowserStack Test Observability
 
-In this section, we will run only api tests on Browserstack. To change test capabilities for this configuration, please refer to the `browserstack.yml` file.
+In this section, we will run only API tests on Browserstack Test Observability. To change test capabilities for this configuration, please refer to the `browserstack.yml` file.
 
 - How to run the test?
 
-  To run the default api tests on your own machine, use the following command:
+  To run the default API tests on your own machine, use the following command:
 
   Maven:
 
@@ -94,7 +88,7 @@ In this section, we will run only api tests on Browserstack. To change test capa
   mvn clean test -P api-test
   ```
 
-  To run a specific api test, use the following command with the additional 'test-name' argument:
+  To run a specific API test, use the following command with the additional 'test-name' argument:
 
   Maven:
 
@@ -106,15 +100,15 @@ In this section, we will run only api tests on Browserstack. To change test capa
 
 - Output
 
-  This run profile executes api tests on BrowserStack's Test Observability. Please refer to your [BrowserStack dashboard](https://observability.browserstack.com/) for test results.
+  This run profile executes API tests on BrowserStack's Test Observability. Please refer to your [BrowserStack dashboard](https://observability.browserstack.com/) for test results.
 
-### Run only unit tests on BrowserStack
+### Run only Unit tests on BrowserStack Test Observability
 
-In this section, we will run only unit tests on Browserstack. To change test capabilities for this configuration, please refer to the `browserstack.yml` file.
+In this section, we will run only Unit tests on Browserstack Test Observability. To change test capabilities for this configuration, please refer to the `browserstack.yml` file.
 
 - How to run the test?
 
-  To run the default unit tests on your own machine, use the following command:
+  To run the default Unit tests on your own machine, use the following command:
 
   Maven:
 
@@ -122,7 +116,7 @@ In this section, we will run only unit tests on Browserstack. To change test cap
   mvn clean test -P unit-test
   ```
 
-  To run a specific unit test, use the following command with the additional 'test-name' argument:
+  To run a specific Unit test, use the following command with the additional 'test-name' argument:
 
   Maven:
 
@@ -137,9 +131,9 @@ In this section, we will run only unit tests on Browserstack. To change test cap
   This run profile executes unit tests on BrowserStack's Test Observability. Please refer to your [BrowserStack dashboard](https://observability.browserstack.com/) for test results.
 
 
-### Run the whole suite of tests on BrowserStack
+### Run the whole suite of tests on BrowserStack Test Observability
 
-In this section, we will run the enitre test suite on Browserstack. To change test capabilities for this configuration, please refer to the `browserstack.yml` file.
+In this section, we will run the Enitre test suite on Browserstack Test Observability. To change test capabilities for this configuration, please refer to the `browserstack.yml` file.
 
 - How to run the test?
 
