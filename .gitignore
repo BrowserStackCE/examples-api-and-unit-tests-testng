@@ -2,3 +2,4 @@ target
 .vscode
 logs
 *.env
+.DS_Store

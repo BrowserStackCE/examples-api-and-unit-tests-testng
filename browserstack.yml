@@ -6,7 +6,7 @@ parallelsPerPlatform: 1
 browserstackLocal: false
 buildName: API and UNIT testing
 buildIdentifier: ${BUILD_NUMBER}
-projectName: TO Api and Unit testing
+projectName: TO API and Unit testing
 testObservability: true
 networkLogs: true
 consoleLogs: info
